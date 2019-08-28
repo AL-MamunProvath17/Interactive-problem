@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   int lower_boundd;
+   int upper_boundd;
+   cin>>lower_boundd>>upper_boundd;
+    while(lower_boundd<=upper_boundd)
+    {
+        int mid=(lower_boundd+upper_boundd)/2;
+        cout<<mid<<endl;
+        
+        int response;
+        cin>>response;
+        if(response==-1) lower_boundd=mid+1;
+        else if(response==1) upper_boundd=mid-1;
+        else if(response==0)
+        {
+            cout<<mid<<endl;
+            break;
+        }
+    }
+
+}
