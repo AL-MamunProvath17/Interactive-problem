@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   int lower_boundd;
+   int upper_boundd;
+   cin>>lower_boundd>>upper_boundd;
+   for(int i=lower_boundd;i<=upper_boundd;i++)
+   {
+       cout<<i<<endl;
+       int response;
+       cin>>response;
+
+       if(response==0)
+       {
+           cout<<" number guessed is"<< i<<endl;break;
+       }
+   }
+
+}
